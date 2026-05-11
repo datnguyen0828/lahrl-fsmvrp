@@ -1,4 +1,4 @@
-# FSMVRP Hierarchical PPO
+# Lookahead-Aware Hierarchical Reinforcement Learning for Solving the Fleet Size and Mix Vehicle Routing Problem
 
 This repository contains a PyTorch implementation of a hierarchical reinforcement learning solver for the Fleet Size and Mix Vehicle Routing Problem (FSMVRP). The solver uses a Semi-Markov Decision Process (SMDP) environment with two action levels:
 
