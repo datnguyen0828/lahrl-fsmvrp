@@ -41,7 +41,6 @@ The current environment assumes Euclidean distances computed from depot and cust
 |-- optuna/
 |   |-- 20node_optuna_auto.py  # 20-node Optuna HPO entry point
 |   `-- 50node_optuna_auto.py  # 50-node Optuna HPO entry point
-|-- data/                      # Saved test tensors
 |-- results/                   # Example checkpoints and training artifacts
 |-- optuna_results/            # Existing Optuna SQLite study files
 `-- log_image_style/           # Plot style JSON files for training curves
@@ -120,13 +119,6 @@ Saved `.pt` files contain a dictionary with the following tensors:
 - `agent_fixed_cost`: fixed vehicle cost with shape `(batch, agent_num)`.
 - `agent_variable_cost`: distance-based vehicle cost with shape `(batch, agent_num)`.
 
-The included `data/` directory contains fixed test tensors for different problem sizes, for example:
-
-```text
-data/test_tensor(20)_6_100_1234.pt
-data/test_tensor(50)_6_100_1234.pt
-data/test_tensor(100)_6_100_1234.pt
-```
 
 ## Generate Test Data
 
